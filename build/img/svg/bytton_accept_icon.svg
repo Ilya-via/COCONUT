@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="42.259mm" height="5.372mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 42259 5372"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:url(#id0)}
+    .fil1 {fill:url(#id1);fill-rule:nonzero}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="2502.7" y1="2347.4" x2="26981.8" y2="2347.4">
+   <stop offset="0" style="stop-opacity:1; stop-color:#B98128"/>
+   <stop offset="0.14902" style="stop-opacity:1; stop-color:#B98128"/>
+   <stop offset="0.611765" style="stop-opacity:1; stop-color:#FAE27B"/>
+   <stop offset="0.721569" style="stop-opacity:1; stop-color:#FDF3AB"/>
+   <stop offset="0.839216" style="stop-opacity:1; stop-color:#FAE27B"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#B98128"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="14742.3" y1="-844.2" x2="14742.3" y2="5998.9">
+   <stop offset="0" style="stop-opacity:1; stop-color:#D6AB4F"/>
+   <stop offset="0.65098" style="stop-opacity:1; stop-color:#C59333"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#B98128"/>
+  </linearGradient>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_699341469152">
+   <path class="fil0" d="M179.8 23.1l41825.2 0c119.5,0 217.1,99.5 217.1,217.1l0 4938.1c0,117.5 -99.5,217 -217.1,217l-41825.2 0c-117.5,0 -217,-97.6 -217,-217l0 -4938.1c0,-119.4 97.6,-217.1 217,-217.1z"/>
+   <path class="fil1" d="M519.5 361.3l41145.9 0c119.4,0 217,99.5 217,217l0 4261.7c0,117.6 -99.5,217.1 -217,217.1l-41145.9 0c-117.5,0 -217,-97.6 -217,-217.1l0 -4261.7c0,-119.4 97.6,-217 217,-217z"/>
+  </g>
+ </g>
+</svg>

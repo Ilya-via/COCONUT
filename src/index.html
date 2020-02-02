@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/icon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+    </script>
+    <title>COCONUT</title>
+</head>
+
+<body>
+    <div class="loaderArea">
+        <div class="loader"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <h1>Расчет стоимости дизайна интерьера</h1>
+            <div class="frame">
+
+                <div class="container-cost-interior">
+                    <p>1. Выберите тип помещения:</p>
+
+                    <div class="button-style" id="container-for-button-room">
+                        <div>
+                            <input type="radio" name="type" id="cottage" checked />
+                            <label for="cottage">Дом/коттедж</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="type" id="apartment" />
+                            <label for="apartment">Квартира</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="type" id="office" />
+                            <label for="office">Офис</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="type" id="other" />
+                            <label for="other">Др. помещение</label>
+                        </div>
+                    </div>
+
+
+                    <p>2. Выберите размер помещения:</p>
+                    <div id="container-for-input">
+                        <input type="text" required maxlength="6" id="square" placeholder="120 м&sup2"
+                            autocomplete="off" pattern="[0-9]+">
+                    </div>
+                    <p>3. Выберите стиль:</p>
+                    <div class="button-style" id="container-for-button-style">
+                        <div>
+                            <input type="radio" name="style" id="classic" checked />
+                            <label for="classic">Классика</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="style" id="modern" />
+                            <label for="modern">Модерн</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="style" id="loft" />
+                            <label for="loft">Лофт</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="style" id="scandinavian" />
+                            <label for="scandinavian">Скандинав.</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="style" id="eco" />
+                            <label for="eco">ЭКО-стиль</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="style" id="consultation" />
+                            <label for="consultation">Консультация</label>
+                        </div>
+                    </div>
+
+                    <button id="accept"><span>Рассчитать стоимость дизайна интерьера</span><div class="" id="hhh"></div> </button>
+                    <!-- <input type="submit" name="submit" id="calculation" />
+                    <label for="calculation" id="accept"><span>Рассчитать стоимость дизайна
+                            интерьера</span><span id="hhh"></span></label> -->
+
+                </div>
+            </div>
+            <p id="little-font">Вы получите стоимость по выбранному способу связи в течение дня</p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
