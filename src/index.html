@@ -9,14 +9,86 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
     </script>
+
     <title>COCONUT</title>
 </head>
 
 <body>
     <div class="loaderArea">
-        <div class="loader"></div>
+        <div class="loader loader-1"></div>
     </div>
+
+    <div class="container-fluid1">
+        <div class="container">
+            <h1>За 10 лет мы выработали наиболее удобный формат работы:</h1>
+            <div class="small-frame">
+                <div class="accordion-container">
+                    <div class="set">
+                        <a value="s1" href="#">
+                            <span> Этап 1. Замеры</span>
+                            <div class="arrow-1 rs1">
+                                <div></div>
+                            </div>
+                        </a>
+                        <div class="content">
+                            <p>Дизайнер выезжает на ваш объект, делает замеры помещения, выясняет ваши требования к
+                                интерьеру и
+                                составляет подробное ТЗ</p>
+                        </div>
+                    </div>
+                    <div class="set">
+                        <a value="s2" href="#">
+                            <span> Этап 2. Планировочное решение</span>
+                            <div class="arrow-1 rs2">
+                                <div></div>
+                            </div>
+                        </a>
+                        <div class="content">
+                            <p> Разрабатываем 5-6 вариантов планировки вашего помещения и на личной встрече с вами
+                                утверждаем
+                                наиболее подходящий вариант</p>
+                        </div>
+                    </div>
+                    <div class="set">
+                        <a value="s3" href="#">
+                            <span> Этап 3. Визуальная часть проекта</span>
+                            <div class="arrow-1 rs3">
+                                <div></div>
+                            </div>
+                        </a>
+                        <div class="content">
+                            <p>Продумываем концепцию, цветовую гамму и общий стиль интерьера, после чего разрабатываем
+                                2D
+                                коллажи или 3D визуализацию</p>
+                        </div>
+                    </div>
+                    <div class="set">
+                        <a value="s4" href="#">
+                            <span>Этап 4. Рабочие чертежи и расчет материалов</span>
+                            <div class="arrow-1 rs4">
+                                <div></div>
+                            </div>
+                        </a>
+                        <div class="content">
+                            <p>Мы работаем напрямую с поставщиками материалов и мебели – поможем подобрать все
+                                необходимое,
+                                а
+                                также передадим вам рабочие чертежи для строителей, сантехников и др.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img class="s1" src="img\s1.jpg" alt="measuring">
+                    <img class="invisible s2" src="img\s2.jpg" alt="planning-decision">
+                    <img class="invisible s3" src="img\s3.jpg" alt="visual-part-of-the-project">
+                    <img class="invisible s4" src="img\s4.jpg" alt="working-drawings">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid">
+        <div></div>
         <div class="container">
             <h1>Расчет стоимости дизайна интерьера</h1>
             <div class="frame">
@@ -24,24 +96,40 @@
                 <div class="container-cost-interior">
                     <p>1. Выберите тип помещения:</p>
 
-                    <div class="button-style" id="container-for-button-room">
+
+
+                    <div class="button-style button-room" id="container-for-button-room">
                         <div>
-                            <input type="radio" name="type" id="cottage" checked />
-                            <label for="cottage">Дом/коттедж</label>
+                            <input type="radio" name="type" value="1" id="cottage"
+                                onchange="checkButtonRoom(this.value)" checked />
+                            <label for="cottage">
+                                <p>Дом/коттедж</p>
+                            </label>
                         </div>
                         <div>
-                            <input type="radio" name="type" id="apartment" />
-                            <label for="apartment">Квартира</label>
+                            <input type="radio" name="type" value="2" id="apartment"
+                                onchange="checkButtonRoom(this.value)" />
+                            <label for="apartment">
+                                <p>Квартира</p>
+                            </label>
                         </div>
                         <div>
-                            <input type="radio" name="type" id="office" />
-                            <label for="office">Офис</label>
+                            <input type="radio" name="type" value="3" id="office"
+                                onchange="checkButtonRoom(this.value)" />
+                            <label for="office">
+                                <p>Офис</p>
+                            </label>
                         </div>
                         <div>
-                            <input type="radio" name="type" id="other" />
-                            <label for="other">Др. помещение</label>
+                            <input type="radio" name="type" value="4" id="other"
+                                onchange="checkButtonRoom(this.value)" />
+                            <label for="other">
+                                <p>Др. помещение</p>
+                            </label>
                         </div>
                     </div>
+
+
 
 
                     <p>2. Выберите размер помещения:</p>
@@ -50,47 +138,56 @@
                             autocomplete="off" pattern="[0-9]+">
                     </div>
                     <p>3. Выберите стиль:</p>
-                    <div class="button-style" id="container-for-button-style">
+                    <div class="button-style button-change" id="container-for-button-style">
                         <div>
-                            <input type="radio" name="style" id="classic" checked />
+                            <input type="radio" name="style" value="1" id="classic"
+                                onchange="checkButtonChange(this.value)" checked />
                             <label for="classic">Классика</label>
                         </div>
                         <div>
-                            <input type="radio" name="style" id="modern" />
+                            <input type="radio" name="style" value="2" id="modern"
+                                onchange="checkButtonChange(this.value)" />
                             <label for="modern">Модерн</label>
                         </div>
                         <div>
-                            <input type="radio" name="style" id="loft" />
+                            <input type="radio" name="style" value="3" id="loft"
+                                onchange="checkButtonChange(this.value)" />
                             <label for="loft">Лофт</label>
                         </div>
                         <div>
-                            <input type="radio" name="style" id="scandinavian" />
+                            <input type="radio" name="style" value="4" id="scandinavian"
+                                onchange="checkButtonChange(this.value)" />
                             <label for="scandinavian">Скандинав.</label>
                         </div>
                         <div>
-                            <input type="radio" name="style" id="eco" />
+                            <input type="radio" name="style" value="5" id="eco"
+                                onchange="checkButtonChange(this.value)" />
                             <label for="eco">ЭКО-стиль</label>
                         </div>
                         <div>
-                            <input type="radio" name="style" id="consultation" />
+                            <input type="radio" name="style" value="6" id="consultation"
+                                onchange="checkButtonChange(this.value)" />
                             <label for="consultation">Консультация</label>
                         </div>
                     </div>
 
-                    <button id="accept"><span>Рассчитать стоимость дизайна интерьера</span><div class="" id="hhh"></div> </button>
-                    <!-- <input type="submit" name="submit" id="calculation" />
-                    <label for="calculation" id="accept"><span>Рассчитать стоимость дизайна
-                            интерьера</span><span id="hhh"></span></label> -->
+                    <button id="accept"><span>Рассчитать стоимость дизайна интерьера</span>
+                        <div class="" id="accept-arrow"></div>
+                    </button>
 
                 </div>
             </div>
             <p id="little-font">Вы получите стоимость по выбранному способу связи в течение дня</p>
         </div>
     </div>
+
+    <div class="alert-success hidden success-alert-opacityNone" id="success-alert">
+        <div class="alert_text">
+            <p></p>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
-
-
-
 </body>
 
 </html>

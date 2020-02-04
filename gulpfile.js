@@ -77,9 +77,9 @@ function vendor() {
 function js() {
     return gulp
         .src(path.src.js)
-        .pipe(rigger())
+        // .pipe(rigger())
         .pipe(sourcemaps.init())
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.js))
         .pipe(browserSync.stream());
