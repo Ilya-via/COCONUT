@@ -614,3 +614,48 @@ p {
         transform: rotate(450deg);
     }
 }
+
+// Animated scroll
+.btn-scrollUp {
+    position: fixed;
+    bottom: 75px;
+    right: 22px;
+    background-color: rgba(14, 134, 64, 0.5);
+    border-radius: 25%;
+    transition: .3s linear;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 25%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+
+        span {
+            display: block;
+            height: 3px;
+            width: 12px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        span:first-child {
+            margin-right: -2.5px;
+            transform: rotate(-45deg);
+        }
+
+        span:last-child {
+            margin-left: -2.5px;
+            transform: rotate(-135deg);
+        }
+    }
+}
+
+.btn-scrollUp:hover {
+    background-color: rgb(14, 134, 64);
+    transition: .3s linear;
+}
