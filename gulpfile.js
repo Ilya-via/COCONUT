@@ -28,7 +28,7 @@ var path = {
         html: 'src/*.html',
         js: 'src/js/main.js',
         vendor: 'src/js/vendor/vendor.js',
-        style: 'src/scss/base.scss',
+        style: 'src/scss/main.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
